@@ -50,7 +50,7 @@ export const createOrder: RequestHandler = async (req, res) => {
         if (!['created', 'in transit', 'completed'].includes(status)) {
         res.status(400).json({ message: 'Estatus invalido' });
         return;
-        }
+        }          
 
         order.status = status;
         await order.save();

@@ -29,7 +29,7 @@ const OrderSchema: Schema = new Schema<IOrder>({
         ref: 'Location',
         required: true
     },
-    dropoff: {
+    dropoff: {           
         type: mongoose.Schema.Types.ObjectId,
         ref: 'Location',
         required: true
