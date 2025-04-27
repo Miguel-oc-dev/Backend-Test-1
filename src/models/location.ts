@@ -5,7 +5,7 @@ export interface ILocation extends Document {
     address: string;
     place_id: string;
     latitude: number;
-    longitude: number;
+    longitude: number;     
 }
 
 const LocationSchema: Schema = new Schema<ILocation>({

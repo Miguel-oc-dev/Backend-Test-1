@@ -19,5 +19,5 @@ export const getPlaceDetails = async (placeId: string) => {
         address,
         latitude: location.lat,
         longitude: location.lng
-    };
+    };         
 };

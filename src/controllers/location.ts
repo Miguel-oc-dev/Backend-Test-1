@@ -29,7 +29,7 @@ export const createLocation: RequestHandler = async (req, res) => {
         res.status(201).json(location);
     } catch (error: any) {
         res.status(400).json({ message: error.message });
-    }
+    }   
     };
 
     // Listar ubicaciones

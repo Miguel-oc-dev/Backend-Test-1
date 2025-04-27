@@ -8,4 +8,4 @@ router.post('/', protect, createLocation);
 router.get('/', protect, getLocations);
 router.delete('/:id/status', protect, deleteLocation);
 
-export default router;
+export default router;     
