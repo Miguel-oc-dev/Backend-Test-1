@@ -5,7 +5,7 @@ import jwt from 'jsonwebtoken';
 // Función para registrar usuario
 export const registerUser = async (email: string, password: string) => {
     const userExists = await User.findOne({ email });
-    if (userExists){
+    if (userExists){     
         throw new Error('El usuario ya existe...');
     }
 

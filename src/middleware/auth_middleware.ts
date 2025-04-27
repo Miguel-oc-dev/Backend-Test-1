@@ -12,7 +12,7 @@ export const protect = (req: Request, res: Response, next: NextFunction) => {
     
 
     // Seccion para verificar que el header exista
-    if (
+    if (   
         req.headers.authorization &&
         req.headers.authorization.startsWith('Bearer ')
     ) {

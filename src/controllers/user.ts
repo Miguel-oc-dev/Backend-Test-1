@@ -8,7 +8,7 @@ export const register = async (req: Request, res: Response) => {
     try {
         const user = await registerUser(email, password);
 
-        res.status(201).json({
+        res.status(201).json({     
             message: 'Usuario registrado correctamente',
             user
         });
