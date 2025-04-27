@@ -72,35 +72,38 @@ https://.postman.co/workspace/My-Workspace~1ef78cff-2f4a-418f-8994-70a6a7c093c1/
 ### Users
 
 - `POST /api/users/register` → Registro de nuevo usuario.
-  ![image](https://github.com/user-attachments/assets/77e2b309-d69a-4705-bf90-d04efd69f3a3)
+![image](https://github.com/user-attachments/assets/934e82b2-3617-4b07-b9e6-629d0f9382b7)
+
 
 - `POST /api/users/login` → Login de usuario (retorna token JWT).
-  ![image](https://github.com/user-attachments/assets/8a5514a0-ac3a-44e8-af4e-b8e32350c747)
+![image](https://github.com/user-attachments/assets/7b11369e-06d5-4b00-a9b3-c5e4f4fb267c)
 
 
 ### Trucks
 
 - `POST /api/trucks/` → Crear una nueva unidad.
-  ![image](https://github.com/user-attachments/assets/4a842308-1f4e-4b85-b2af-b7935b8a5ab8)
+![image](https://github.com/user-attachments/assets/6fff7c8b-0961-45ba-bc26-59a14ae84acd)
 
 - `GET /api/trucks/` → Listar las unidades del usuario.
-  ![image](https://github.com/user-attachments/assets/56f11e51-296c-4635-92f0-4f84bc825222)
+![image](https://github.com/user-attachments/assets/273930f6-14fb-4066-8fa6-f9d06dafa1ee)
 
 - `PUT /api/trucks/:id` → Actualizar unidad.
-  ![image](https://github.com/user-attachments/assets/525eb74e-94f9-492e-9782-0dd8df676251)
+![image](https://github.com/user-attachments/assets/4db1fe76-2a3e-4335-b10c-311457b308be)
 
 - `DELETE /api/trucks/:id` → Eliminar unidad.
-  ![image](https://github.com/user-attachments/assets/a63aa56d-3b70-4e71-a9f2-87e6569abd53)
+![image](https://github.com/user-attachments/assets/f33d12c2-4d38-49a9-a88d-7d8669819ab8)
+
 
 
 ### Locations
 
 - `POST /api/locations/` → Crear una nueva location desde `place_id` de Google Maps.
-  ![image](https://github.com/user-attachments/assets/636c8b5f-c12c-4df9-9fe2-cac7d24c431a)
+![image](https://github.com/user-attachments/assets/0c728bb1-8561-4754-9ab1-5ed63a8428d4)
 
   El error en consola muestra a que se debe de verificar el sistema de pago de Google Cloud
+  
   En cuanto se libere la autenticación, subire las actualizaciones de las pruebas
-  ![image](https://github.com/user-attachments/assets/d700e9a0-4f18-4575-9f50-be0bd058de81)
+![image](https://github.com/user-attachments/assets/5e700136-cedc-4277-83a6-40d70ce42c18)
 
 - `GET /api/locations/` → Listar locations del usuario.
 - `DELETE /api/locations/:id` → Eliminar location.
@@ -108,13 +111,13 @@ https://.postman.co/workspace/My-Workspace~1ef78cff-2f4a-418f-8994-70a6a7c093c1/
 ### Orders
 
 - `POST /api/orders/` → Crear una nueva orden de envío.
-  ![image](https://github.com/user-attachments/assets/bf57764b-73ca-4ce2-a52c-b309024dbe47)
+![image](https://github.com/user-attachments/assets/82058534-4f3e-490a-a302-e1f4201e6e78)
 
 - `GET /api/orders/` → Listar órdenes del usuario.
-  ![image](https://github.com/user-attachments/assets/da49d572-5bd7-4440-a7ae-ae08d6dcd005)
+![image](https://github.com/user-attachments/assets/b64fad0d-b385-4dda-89da-11b18c90405b)
 
 - `PUT /api/orders/:id/status` → Actualizar el estado de una orden (`created`, `in transit`, `completed`).
-  ![image](https://github.com/user-attachments/assets/14e31dc2-8462-4cb3-99a8-350e1f06413d)
+![image](https://github.com/user-attachments/assets/7739517a-df7d-4b4a-9e37-e7e212046fa4)
 
 
 ## Estructura del proyecto
@@ -134,9 +137,9 @@ https://.postman.co/workspace/My-Workspace~1ef78cff-2f4a-418f-8994-70a6a7c093c1/
 Cada request privado debe llevar en headers:
 
 ```
-Si utiliza una herramienta como Postman, es necesario llenar el token en el apartado de "Authorization"
 Authorization: Bearer <token>
 ```
+Si utiliza una herramienta como Postman, es necesario llenar el token en el apartado de "Authorization"
 
 Obtenido después de login.
 
