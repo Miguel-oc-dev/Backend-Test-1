@@ -9,4 +9,4 @@ router.get('/', protect, getTrucks);
 router.put('/:id', protect, updateTruck);
 router.delete('/:id', protect, deleteTruck);
 
-export default router;
+export default router;     

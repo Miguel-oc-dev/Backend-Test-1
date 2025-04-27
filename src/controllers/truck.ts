@@ -61,7 +61,7 @@ import Truck from '../models/truck';
 
         if (!truck) {
         return;
-        }
+        }   
 
         res.json({ message: 'Unidad eliminada...' });
     } catch (error: any) {

@@ -25,7 +25,7 @@ const TruckSchema: Schema = new Schema<ITruck>({
         type: String,
         required: true
     }
-});
+});     
 
 const Truck = mongoose.model<ITruck>('Truck', TruckSchema);
 
